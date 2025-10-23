@@ -1,0 +1,249 @@
+/* ===================================
+   CSS PSEUDO-CLASSES PRACTICE
+   Lesson 2 - Starter File
+   =================================== */
+
+/* === RESET & BASE STYLES === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* === HEADER STYLES === */
+#main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#main-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* === SECTION STYLES === */
+.section {
+    background: white;
+    margin: 30px 0;
+    padding: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.instruction {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+/* ===================================
+   SECTION 1: NAVIGATION
+   TODO: Add :hover pseudo-class styles
+   =================================== */
+
+#main-nav {
+    background: #2c3e50;
+    padding: 30px 0;
+}
+
+#main-nav h2 {
+    color: white;
+}
+
+#main-nav .instruction {
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: #34495e;
+    color: white;
+}
+
+/* TODO: Add :hover style
+   - Change background color to #3498db
+   - Keep text white
+*/
+.nav-links a:hover {
+    background-color:#764ba2;
+    transform: scale(1.2);
+}
+
+/* ===================================
+   SECTION 2: LISTS
+   TODO: Add :first-child, :last-child, :nth-child(even/odd), :hover
+   =================================== */
+
+.list-examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.list-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.list-box h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.shopping-list,
+.task-list {
+    list-style-position: inside;
+}
+
+.shopping-list li,
+.task-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 5px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+/* TODO: Add list pseudo-classes
+   - Make :first-child bold and yellow background (#ffd700) */
+  .shopping-list li:first-child, .task-list li:first-child {
+    background-color: #ffd700;
+    font-weight: bold
+  }
+   /* - Make :last-child remove the border-bottom */
+   .shopping-list li:last-child, .task-list li:last-child {
+    border-bottom: none;
+   }
+   /* - Make :nth-child(even) light gray background (#f0f0f0) */
+   /* - Make :nth-child(odd) white background */
+   /* - Add :hover effect (light blue background #e3f2fd, pointer cursor)  */
+
+
+/* ===================================
+   SECTION 3: TABLE
+   TODO: Add :nth-child(even/odd) and :hover
+   =================================== */
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.data-table thead {
+    background: #667eea;
+    color: white;
+}
+
+.data-table th,
+.data-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.data-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* TODO: Add table pseudo-classes
+   - Use :nth-child(even) on tbody tr for light gray background (#f0f0f0)
+   - Use :nth-child(odd) on tbody tr for white background
+   - Add :hover effect on tbody tr (light blue background #e3f2fd, pointer)
+*/
+
+/* #1 */
+.data-table tbody tr:nth-child(even){
+    background-color: #f0f0f0;
+}
+
+/* Number 2 */
+.data-table tbody tr:nth-child(odd) {
+    background-color:white;
+}
+/* Number 3 */
+.data-table tbody tr:hover{
+    cursor:pointer;
+    background-color: #e3f2fd
+}
+/* === FOOTER === */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+/* ===================================
+   TIPS FOR STUDENTS:
+   
+   Pseudo-class Syntax:
+   selector:pseudo-class { property: value; }
+   
+   Today's Patterns:
+   1. :hover - Mouse over effect
+   2. :first-child - First element special
+   3. :last-child - Last element special
+   4. :nth-child(even) - Every other element
+   5. :nth-child(odd) - Alternating pattern
+   
+   IMPORTANT: No space before the colon!
+   WRONG:  li :first-child { }
+   RIGHT:  li:first-child { }
+   
+   Happy coding! 🚀
+   =================================== */

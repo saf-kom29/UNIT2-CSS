@@ -1,0 +1,42 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+/* Movie Review CSS Starter File */
+/* We'll add styles here step by step! */
+
+/* Step 1: Colors - We'll add these together! */
+body {
+    bacground-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 0
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
+}
+
+.tagline {
+    font-size: 20px;
+    font-style:italic;
+    color: #ECF0F1;
+    margin:0;
+
+}
+/* Step 2: Typography - Font families coming soon! */
+
+
+/* Step 3: Text styling - Sizes and spacing! */
