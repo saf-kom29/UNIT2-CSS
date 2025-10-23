@@ -6,7 +6,7 @@
 
 /* Step 1: Colors - We'll add these together! */
 body {
-    bacground-color: #F5F5F5;
+    background-color: #F5F5F5;
     color: #333333;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.6;
@@ -33,7 +33,7 @@ header h1 {
     font-size: 20px;
     font-style:italic;
     color: #ECF0F1;
-    margin:0;
+    margin: 0;
 
 }
 /* Step 2: Typography - Font families coming soon! */

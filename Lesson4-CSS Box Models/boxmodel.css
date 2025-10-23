@@ -1,0 +1,22 @@
+.example-div {
+    background-color: powderblue;
+    height:6rem;
+    width: 50%;
+}
+
+.card {
+width: 300px;
+height:350px;
+padding: 10px; 
+border:3px solid #007ACC;
+margin: 25px;
+border-radius: 10px;
+text-align: center
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+}
+
