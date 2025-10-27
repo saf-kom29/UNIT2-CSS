@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Code Along Activity</title>
+    <style>
+        /* STEP 1: Start here - Add universal box-sizing
+           This MUST be first in every project!
+           It makes width calculations predictable
+        */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* STEP 2: Basic body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* ========================================
+           SECTION 1: CONTENT & SIZING
+           ======================================== */
+
+        /* STEP 3: Define content layer
+           Set width and height
+           Add background color to see the content area
+        */
+        .card {
+    background: #667eea;
+    color: white;
+    width: 300px;
+    height: auto;
+    
+    /* ADD YOUR CODE HERE */
+    /* width: ; */
+    /* height: ; */
+    
+}
+
+        /* ========================================
+           SECTION 2: PADDING LAYER
+           ======================================== */
+
+        /* STEP 4: Add padding
+           Padding creates space INSIDE the border
+           It has the background color
+           The content stays away from edges
+        */
+        /* .card {
+            padding: ;
+        } */
+.card {
+    padding: 20px;
+}
+        /* ========================================
+           SECTION 3: BORDER LAYER
+           ======================================== */
+
+        /* STEP 5: Add border
+           Border requires THREE parts:
+           1. Width (like 3px)
+           2. Style (solid, dashed, dotted, etc.)
+           3. Color
+           
+           COMMON MISTAKE: Forgetting the style!
+           WRONG:  border: 3px blue;
+           RIGHT:  border: 3px solid blue;
+        */
+        /* .card {
+            border: ;
+            border-radius: 10px;
+        } */
+.card {
+    border: 3px solid blue;
+    border-radius: 10px
+}
+        /* ========================================
+           SECTION 4: MARGIN LAYER
+           ======================================== */
+
+        /* STEP 6: Add margin
+           Margin creates space OUTSIDE the border
+           NO background color extends here
+           Pushes other elements away
+           Can be negative (advanced)
+        */
+        /* .card {
+            margin: ;
+        } */
+.card{
+    margin: 20px auto;
+}
+        /* ========================================
+           SECTION 5: COMPLETE BOX MODEL
+           ======================================== */
+
+        /* STEP 7: Put it all together
+           Uncomment and fill in all values
+        */
+        /* .card-complete {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid blue;
+            margin: 20px auto;
+            background: purple;
+        } */
+.card {
+    background-color: #667eea;
+    color: white;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 20px auto;
+    background: purple;
+}
+        /* ========================================
+           BONUS: RESPONSIVE & SPACING
+           ======================================== */
+
+        /* STEP 8: Text styling inside card */
+        .card h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+    </style>
+    <link rel="stylesheet" href="boxmodel-starter.css">
+</head>
+<body>
+
+    <!-- ========================================
+         SECTION 1: SIMPLE CARD
+         Start here - add CSS rules to .card
+         ======================================== -->
+    <h2>Step 1-4: Build a Basic Card</h2>
+    <div class="card">
+        <h3>My Card</h3>
+        <p>This is a card element. Let's add CSS properties to style it!</p>
+    </div>
+
+
+    <!-- ========================================
+         SECTION 2: CARD WITH CONTENT
+         After Step 4, try this one
+         ======================================== -->
+    <h2 style="margin-top: 40px;">Step 5-6: Add More Details</h2>
+    <div class="card" style="margin-top: 0;">
+        <h3>Product Card</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p><strong>$29.99</strong></p>
+    </div>
+
+
+    <!-- ========================================
+         SECTION 3: MULTIPLE CARDS
+         After Step 6, notice margin spacing
+         ======================================== -->
+    <h2 style="margin-top: 40px;">Margin Comparison: With vs Without</h2>
+    
+    <div style="display: flex; gap: 20px; margin-top: 20px;">
+        <div style="flex: 1;">
+            <h4>Without Margin:</h4>
+            <div class="card" style="margin: 0;">
+                Card 1
+            </div>
+            <div class="card" style="margin: 0;">
+                Card 2
+            </div>
+        </div>
+        
+        <div style="flex: 1;">
+            <h4>With Margin:</h4>
+            <div class="card">
+                Card 1
+            </div>
+            <div class="card">
+                Card 2
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================================
+         SECTION 4: CHALLENGE
+         After you complete all steps, build this!
+         ======================================== -->
+    <h2 style="margin-top: 40px;">Challenge: Style This Card</h2>
+    <div class="card">
+        <h3>🎯 Challenge Card</h3>
+        <p>Make this card beautiful using what you learned:</p>
+        <ul style="margin: 10px 0; padding-left: 20px;">
+            <li>Set width to 300px</li>
+            <li>Add 25px padding on all sides</li>
+            <li>Add a 2px solid border</li>
+            <li>Add 20px margin on all sides</li>
+        </ul>
+    </div>
+
+</body>
+</html>
