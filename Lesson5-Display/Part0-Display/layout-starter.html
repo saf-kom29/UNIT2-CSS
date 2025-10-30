@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Practice - Display Properties</title>
+<link rel="stylesheet" href="styles-starter.css">
+</head>
+<body>
+
+    <!-- NAVIGATION SECTION -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main>
+        
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>Welcome to Display Properties</h1>
+            <p>Learn how to control layout with CSS display values</p>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section>
+            <h2 class="section-heading">Understanding Display Properties</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">
+                The <span class="highlight">display property</span> is one of the most important CSS properties 
+                for controlling layout. It determines how elements are positioned and how they interact with 
+                other elements on the page.
+            </p>
+        </section>
+
+        <!-- FEATURE BLOCKS (Block elements) -->
+        <section>
+            <h2 class="section-heading">Display: Block</h2>
+            
+            <div class="feature">
+                <h3>✓ Takes Full Width</h3>
+                <p>Block elements stretch to fill their container's width. Each block element starts on a <span class="highlight">new line</span>.</p>
+            </div>
+
+            <div class="feature">
+                <h3>✓ Accepts Width & Height</h3>
+                <p>You can control the exact dimensions of block elements using width and height properties.</p>
+            </div>
+
+            <div class="feature">
+                <h3>✓ Stacks Vertically</h3>
+                <p>Block elements naturally stack on top of each other, creating a vertical flow of content.</p>
+            </div>
+        </section>
+
+        <!-- CARDS SECTION (Inline-block elements) -->
+        <section>
+            <h2 class="section-heading">Display: Inline-Block</h2>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>🎯 Card One</h3>
+                    <p>This card uses inline-block display, which allows it to sit side-by-side with other cards while still accepting width and height properties.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🚀 Card Two</h3>
+                    <p>Inline-block is perfect for creating card layouts, image galleries, and navigation menus where elements need to flow horizontally.</p>
+                </div>
+
+                <div class="card">
+                    <h3>💡 Card Three</h3>
+                    <p>Notice how these cards are centered? That's because their container uses text-align: center, which works with inline-block elements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INLINE ELEMENTS DEMO -->
+        <section>
+            <h2 class="section-heading">Display: Inline</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto; color: #666;">
+                Inline elements like <span class="highlight">this highlighted text</span> flow naturally 
+                within text content. They only take up as much width as their content needs and 
+                <span class="highlight">don't break onto new lines</span> unless the text wraps naturally. 
+                Common inline elements include <strong>strong</strong>, <em>em</em>, and <a href="#">links</a>.
+            </p>
+        </section>
+
+        <!-- CHALLENGE SECTION -->
+        <section class="challenge-section">
+            <h2>🏆 Challenge Activity!</h2>
+            <p style="margin-bottom: 15px;"><strong>Once you've completed all the TODO items above, try these challenges:</strong></p>
+            
+            <ol style="margin-left: 30px; line-height: 2;">
+                <li>Add a fourth card to the cards section</li>
+                <li>Create a new section with centered content</li>
+                <li>Experiment: Change one of the cards to <code>display: block</code> and see what happens</li>
+                <li>Try setting a card to <code>display: inline</code> - what happens to its width?</li>
+                <li>Add a <code>display: none;</code> to one card to hide it completely</li>
+            </ol>
+
+            <p style="margin-top: 20px; font-weight: bold; color: #ff9500;">
+                💡 Remember: Save your work and refresh the browser to see changes!
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 CSS Display Practice | Built by [Your Name]</p>
+    </footer>
+
+</body>
+</html>

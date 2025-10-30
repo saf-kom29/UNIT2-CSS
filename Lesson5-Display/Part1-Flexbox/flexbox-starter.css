@@ -1,0 +1,352 @@
+/* ==========================================
+   CSS FLEXBOX - STARTER FILE
+   Follow along with your teacher!
+   ========================================== */
+
+/* Basic Reset - this is already done for you! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* ==========================================
+   PAGE HEADER - No flexbox needed here yet
+   ========================================== */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* ==========================================
+   EXAMPLE SECTIONS - Styling for each box
+   ========================================== */
+.example-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    color: #667eea;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.goal {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #ff9500;
+    font-weight: bold;
+    color: #856404;
+}
+
+.instructions {
+    background-color: #e7f3ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border-left: 4px solid #4fc3f7;
+}
+
+.instructions h3 {
+    color: #0277bd;
+    margin-bottom: 15px;
+}
+
+.instructions ol {
+    margin-left: 25px;
+    line-height: 2;
+}
+
+.instructions code {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+.tip {
+    background-color: #fff9e6;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border-left: 4px solid #ffc107;
+    font-weight: bold;
+}
+
+
+/* ========================================== 
+   👩‍💻 CODE-ALONG #1: HORIZONTAL NAVIGATION
+   TODO: Make the links display horizontally!
+   ========================================== */
+
+.demo-nav {
+    background-color: #667eea;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.demo-nav ul {
+    /* TODO #1: Add display: flex; */
+    display: flex;
+    /* TODO #2: Add justify-content: center; */
+    justify-content: center;
+    /* TODO #3: Add gap: 30px; */
+    gap: 30px;
+    
+    list-style: none;
+}
+
+.demo-nav li {
+    /* No flexbox needed here - items are flexible automatically */
+}
+
+.demo-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.demo-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ========================================== 
+   👩‍💻 CODE-ALONG #2: PERFECT CENTERING
+   TODO: Center content both horizontally and vertically!
+   ========================================== */
+
+.hero-box {
+    /* TODO #1: Add display: flex; */
+    display:flex;
+    /* TODO #2: Add flex-direction: column; */
+    flex-direction: column;
+    /* TODO #3: Add justify-content: center; */
+    justify-content: center;
+    /* TODO #4: Add align-items: center; */
+    align-items: center;
+    /* ALIGN-ITEM IS FOR VERTICAL! JUSTIFY IS FOR HORIZONTAL */
+    
+    min-height: 400px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.hero-box h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hero-box p {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+/* ========================================== 
+   👩‍💻 CODE-ALONG #3: RESPONSIVE CARDS
+   TODO PART A: Make cards sit side-by-side!
+   ========================================== */
+
+.cards-container {
+    /* TODO #1: Add display: flex; */
+    display: flex;
+    /* TODO #2: Add justify-content: center; */
+    justify-content: center;
+    /* TODO #3: Add flex-wrap: wrap; */
+    flex-wrap: wrap;
+    /* TODO #4: Add gap: 20px; */
+    gap: 20px;
+    
+    margin: 30px 0;
+}
+
+/* ========================================== 
+   👩‍💻 CODE-ALONG #4: EQUAL-WIDTH CARDS
+   TODO PART B: Make cards equal width!
+   ========================================== */
+
+.card {
+    /* TODO #1: Add flex: 1; */
+   
+    /* TODO #2: Add min-width: 250px; */
+   
+    
+    background-color: white;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+.card h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ========================================== 
+   FEATURE ROW - Use same pattern as cards!
+   TODO: Apply what you learned above
+   ========================================== */
+
+.feature-row {
+    /* TODO: Add display: flex; */
+    display: flex;
+    /* TODO: Add justify-content: center; */
+    justify-content: center;
+    /* TODO: Add gap: 20px; */
+    gap: 20px;
+    
+    margin: 30px 0;
+}
+
+.feature-box {
+    /* TODO: Add flex: 1; */
+
+    /* TODO: Add min-width: 200px; */
+
+    
+    background-color: #f9f9f9;
+    border: 2px solid #51cf66;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    color: #51cf66;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.feature-box p {
+    color: #666;
+}
+
+
+/* ========================================== 
+   PRACTICE SECTION STYLES
+   ========================================== */
+
+.practice-section {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border: 3px dashed #667eea;
+}
+
+.challenge-list {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.challenge-list h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.challenge-list ol {
+    margin-left: 25px;
+    line-height: 2;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #28a745;
+    font-size: 1.1em;
+}
+
+
+/* ==========================================
+   QUICK REFERENCE GUIDE
+   ==========================================
+   
+   CONTAINER PROPERTIES (on parent):
+   ----------------------------------
+   display: flex;               → Enables flexbox
+   flex-direction: row;         → Items go horizontally (default)
+   flex-direction: column;      → Items go vertically
+   justify-content: center;     → Center on main axis
+   justify-content: space-between; → Space between items
+   align-items: center;         → Center on cross axis
+   flex-wrap: wrap;             → Allow items to wrap
+   gap: 20px;                   → Space between items
+   
+   ITEM PROPERTIES (on children):
+   -------------------------------
+   flex: 1;                     → Grow equally to fill space
+   flex: 2;                     → Grow twice as much as flex: 1
+   min-width: 250px;            → Prevent getting too narrow
+   
+   REMEMBER:
+   ---------
+   • display: flex goes on the PARENT (container)
+   • The CHILDREN automatically become flex items
+   • Main axis = direction of flex-direction
+   • Cross axis = perpendicular to main axis
+   
+   ========================================== */

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Code-Along - Lesson 5-1</title>
+    <link rel="stylesheet" href="L5-1_flexbox-starter.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎨 Flexbox Code-Along Exercises</h1>
+        <p>Follow along with each section as we learn!</p>
+        <link rel="stylesheet" href="flexbox-starter.css">
+    </header>
+
+    <!-- ========================================
+         CODE-ALONG #1: HORIZONTAL NAVIGATION
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #1: Horizontal Navigation</h2>
+            <p class="goal">GOAL: Make these links display horizontally</p>
+        </div>
+
+        <nav class="demo-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="instructions">
+            <h3>📝 Instructions:</h3>
+            <ol>
+                <li>Find the <code>.demo-nav ul</code> rule in your CSS</code></li>
+                <li>Add <code>display: flex;</code></li>
+                <li>Add <code>justify-content: center;</code></li>
+                <li>Add <code>gap: 30px;</code></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #2: PERFECT CENTERING
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #2: Perfect Centering</h2>
+            <p class="goal">GOAL: Center this content both horizontally AND vertically</p>
+        </div>
+
+        <div class="hero-box">
+            <h1>Welcome to Flexbox!</h1>
+            <p>The modern way to build layouts</p>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions:</h3>
+            <ol>
+                <li>Find the <code>.hero-box</code> rule in your CSS</li>
+                <li>Add <code>display: flex;</code></li>
+                <li>Add <code>flex-direction: column;</code></li>
+                <li>Add <code>justify-content: center;</code></li>
+                <li>Add <code>align-items: center;</code></li>
+            </ol>
+            <p class="tip">💡 TIP: flex-direction: column makes items stack vertically!</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #3: RESPONSIVE CARDS
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #3: Responsive Card Layout</h2>
+            <p class="goal">GOAL: Make cards sit side-by-side and wrap on small screens</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3>📦 Container</h3>
+                <p>The parent that gets display: flex</p>
+            </div>
+            <div class="card">
+                <h3>🎯 Items</h3>
+                <p>The children that become flexible</p>
+            </div>
+            <div class="card">
+                <h3>📱 Responsive</h3>
+                <p>Adapts to different screen sizes</p>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions - Part A (Container):</h3>
+            <ol>
+                <li>Find the <code>.cards-container</code> rule</li>
+                <li>Add <code>display: flex;</code></li>
+                <li>Add <code>justify-content: center;</code></li>
+                <li>Add <code>flex-wrap: wrap;</code> (makes it responsive!)</li>
+                <li>Add <code>gap: 20px;</code></li>
+            </ol>
+            <p class="tip">💡 TIP: flex-wrap: wrap allows cards to drop to next line!</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #4: EQUAL-WIDTH CARDS
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #4: Make Cards Equal Width</h2>
+            <p class="goal">GOAL: Cards should grow to fill available space equally</p>
+        </div>
+
+        <div class="feature-row">
+            <div class="feature-box">
+                <h3>⚡ Fast</h3>
+                <p>Lightning quick performance</p>
+            </div>
+            <div class="feature-box">
+                <h3>🔒 Secure</h3>
+                <p>Bank-level encryption</p>
+            </div>
+            <div class="feature-box">
+                <h3>💚 Easy</h3>
+                <p>Simple to use interface</p>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions - Part B (Items):</h3>
+            <ol>
+                <li>Go back to the <code>.card</code> rule</li>
+                <li>Add <code>flex: 1;</code> (makes all cards equal width!)</li>
+                <li>Add <code>min-width: 250px;</code> (prevents cards from getting too narrow)</li>
+            </ol>
+            <p class="tip">💡 TIP: flex: 1 makes items share space equally!</p>
+            
+            <h3 style="margin-top: 20px;">Then do the same for feature boxes:</h3>
+            <ol>
+                <li>Find the <code>.feature-row</code> rule and add flexbox properties</li>
+                <li>Find the <code>.feature-box</code> rule and add <code>flex: 1;</code></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PRACTICE SECTION
+         ======================================== -->
+    <section class="example-section practice-section">
+        <div class="section-header">
+            <h2>🏆 Practice Challenge</h2>
+            <p class="goal">Try these on your own!</p>
+        </div>
+
+        <div class="challenge-list">
+            <h3>Easy Challenges:</h3>
+            <ol>
+                <li>Add a 4th card to the cards section</li>
+                <li>Change the navigation to <code>justify-content: space-between;</code></li>
+                <li>Try <code>flex-direction: column;</code> on the cards container - what happens?</li>
+            </ol>
+
+            <h3 style="margin-top: 30px;">Medium Challenges:</h3>
+            <ol>
+                <li>Give ONE card <code>flex: 2;</code> to make it twice as wide as the others</li>
+                <li>Create a footer with 3 equal columns (copy the feature-row pattern)</li>
+                <li>Try different values for <code>justify-content</code> on different sections</li>
+            </ol>
+
+            <h3 style="margin-top: 30px;">Advanced Challenges:</h3>
+            <ol>
+                <li>Build a "pricing table" with 3 equal-width price cards</li>
+                <li>Create a layout with image on the left, text on the right</li>
+                <li>Make a "skills section" with small inline tags using flexbox</li>
+            </ol>
+        </div>
+
+        <div class="success-message">
+            <p>💡 <strong>Remember:</strong> Breaking things is how you learn! Don't be afraid to experiment!</p>
+        </div>
+    </section>
+
+</body>
+</html>
