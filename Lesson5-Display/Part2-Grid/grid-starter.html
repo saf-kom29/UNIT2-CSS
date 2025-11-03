@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Code-Along - Lesson 5-2</title>
+    <link rel="stylesheet" href="L5-2_grid-starter.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎨 CSS Grid Code-Along Exercises</h1>
+        <p>Master the power of two-dimensional layouts!</p>
+        <link rel="stylesheet" href="grid-starter.css">
+    </header>
+
+    <!-- ========================================
+         CODE-ALONG #1: BASIC GRID
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #1: Your First Grid</h2>
+            <p class="goal">GOAL: Create a simple 3-column grid layout</p>
+        </div>
+
+        <div class="basic-grid">
+            <div class="grid-item">Box 1</div>
+            <div class="grid-item">Box 2</div>
+            <div class="grid-item">Box 3</div>
+            <div class="grid-item">Box 4</div>
+            <div class="grid-item">Box 5</div>
+            <div class="grid-item">Box 6</div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions:</h3>
+            <ol>
+                <li>Find the <code>.basic-grid</code> rule in your CSS</li>
+                <li>Add <code>display: grid;</code></li>
+                <li>Add <code>grid-template-columns: 1fr 1fr 1fr;</code></li>
+                <li>Add <code>gap: 20px;</code></li>
+            </ol>
+            <p class="tip">💡 TIP: "fr" means "fraction" - each column gets an equal fraction of space!</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #2: DIFFERENT COLUMN SIZES
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #2: Custom Column Widths</h2>
+            <p class="goal">GOAL: Create columns with different sizes</p>
+        </div>
+
+        <div class="sidebar-layout">
+            <div class="grid-item sidebar">Sidebar<br>(narrow)</div>
+            <div class="grid-item main">Main Content<br>(wide)</div>
+            <div class="grid-item extra">Extra<br>(narrow)</div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions:</h3>
+            <ol>
+                <li>Find the <code>.sidebar-layout</code> rule</li>
+                <li>Add <code>display: grid;</code></li>
+                <li>Add <code>grid-template-columns: 1fr 3fr 1fr;</code></li>
+                <li>Add <code>gap: 20px;</code></li>
+            </ol>
+            <p class="tip">💡 TIP: 1fr + 3fr + 1fr = 5 total parts. Middle column gets 3/5 of the space!</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #3: REPEAT FUNCTION
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #3: Using repeat()</h2>
+            <p class="goal">GOAL: Create a 4-column grid more efficiently</p>
+        </div>
+
+        <div class="photo-grid">
+            <div class="grid-item photo">📷 Photo 1</div>
+            <div class="grid-item photo">📷 Photo 2</div>
+            <div class="grid-item photo">📷 Photo 3</div>
+            <div class="grid-item photo">📷 Photo 4</div>
+            <div class="grid-item photo">📷 Photo 5</div>
+            <div class="grid-item photo">📷 Photo 6</div>
+            <div class="grid-item photo">📷 Photo 7</div>
+            <div class="grid-item photo">📷 Photo 8</div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions:</h3>
+            <ol>
+                <li>Find the <code>.photo-grid</code> rule</li>
+                <li>Add <code>display: grid;</code></li>
+                <li>Add <code>grid-template-columns: repeat(4, 1fr);</code></li>
+                <li>Add <code>gap: 15px;</code></li>
+            </ol>
+            <p class="tip">💡 TIP: repeat(4, 1fr) is the same as writing "1fr 1fr 1fr 1fr" - much shorter!</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #4: RESPONSIVE GRID
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #4: Auto-Responsive Grid</h2>
+            <p class="goal">GOAL: Grid that adapts automatically to screen size</p>
+        </div>
+
+        <div class="responsive-grid">
+            <div class="grid-item card-item">
+                <h3>🎯 Feature 1</h3>
+                <p>Automatically responsive</p>
+            </div>
+            <div class="grid-item card-item">
+                <h3>⚡ Feature 2</h3>
+                <p>No media queries needed</p>
+            </div>
+            <div class="grid-item card-item">
+                <h3>🚀 Feature 3</h3>
+                <p>Fills available space</p>
+            </div>
+            <div class="grid-item card-item">
+                <h3>💎 Feature 4</h3>
+                <p>Always looks great</p>
+            </div>
+            <div class="grid-item card-item">
+                <h3>🎨 Feature 5</h3>
+                <p>Modern and clean</p>
+            </div>
+            <div class="grid-item card-item">
+                <h3>🔥 Feature 6</h3>
+                <p>Easy to implement</p>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions:</h3>
+            <ol>
+                <li>Find the <code>.responsive-grid</code> rule</li>
+                <li>Add <code>display: grid;</code></li>
+                <li>Add <code>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</code></li>
+                <li>Add <code>gap: 20px;</code></li>
+            </ol>
+            <p class="tip">💡 TIP: This is MAGIC! auto-fit + minmax creates responsive columns automatically!</p>
+            <p class="tip">💡 minmax(250px, 1fr) means: "at least 250px wide, but grow to fill space"</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #5: SPANNING CELLS
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #5: Spanning Multiple Columns</h2>
+            <p class="goal">GOAL: Make items take up more than one column</p>
+        </div>
+
+        <div class="spanning-grid">
+            <div class="grid-item header-item">Header (spans all 3 columns)</div>
+            <div class="grid-item">Column 1</div>
+            <div class="grid-item">Column 2</div>
+            <div class="grid-item">Column 3</div>
+            <div class="grid-item footer-item">Footer (spans all 3 columns)</div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions - Part A (Grid Container):</h3>
+            <ol>
+                <li>Find the <code>.spanning-grid</code> rule</li>
+                <li>Add <code>display: grid;</code></li>
+                <li>Add <code>grid-template-columns: repeat(3, 1fr);</code></li>
+                <li>Add <code>gap: 15px;</code></li>
+            </ol>
+            
+            <h3 style="margin-top: 20px;">📝 Instructions - Part B (Spanning Items):</h3>
+            <ol>
+                <li>Find the <code>.header-item</code> rule</li>
+                <li>Add <code>grid-column: 1 / 4;</code> (start at line 1, end at line 4)</li>
+                <li>Find the <code>.footer-item</code> rule</li>
+                <li>Add <code>grid-column: 1 / 4;</code></li>
+            </ol>
+            <p class="tip">💡 TIP: 3 columns = 4 grid lines! Lines are numbered from the edges.</p>
+            <p class="tip">💡 Shorthand: <code>grid-column: 1 / 4;</code> = span from line 1 to line 4</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CODE-ALONG #6: ADVANCED SPANNING
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>👩‍💻 Code-Along #6: Advanced Layout Spanning</h2>
+            <p class="goal">GOAL: Create a magazine-style layout with different sized items</p>
+        </div>
+
+        <div class="magazine-grid">
+            <div class="grid-item feature-article">Featured Article<br>(Large)</div>
+            <div class="grid-item">Article 2</div>
+            <div class="grid-item">Article 3</div>
+            <div class="grid-item tall-article">Tall Article</div>
+            <div class="grid-item">Article 5</div>
+            <div class="grid-item">Article 6</div>
+        </div>
+
+        <div class="instructions">
+            <h3>📝 Instructions - Part A (Container):</h3>
+            <ol>
+                <li>Find the <code>.magazine-grid</code> rule</li>
+                <li>Add <code>display: grid;</code></li>
+                <li>Add <code>grid-template-columns: repeat(3, 1fr);</code></li>
+                <li>Add <code>grid-auto-rows: 150px;</code> (makes rows 150px tall)</li>
+                <li>Add <code>gap: 15px;</code></li>
+            </ol>
+            
+            <h3 style="margin-top: 20px;">📝 Instructions - Part B (Featured Article):</h3>
+            <ol>
+                <li>Find the <code>.feature-article</code> rule</li>
+                <li>Add <code>grid-column: 1 / 3;</code> (spans 2 columns)</li>
+                <li>Add <code>grid-row: 1 / 3;</code> (spans 2 rows)</li>
+            </ol>
+            
+            <h3 style="margin-top: 20px;">📝 Instructions - Part C (Tall Article):</h3>
+            <ol>
+                <li>Find the <code>.tall-article</code> rule</li>
+                <li>Add <code>grid-row: span 2;</code> (spans 2 rows, alternative syntax!)</li>
+            </ol>
+            <p class="tip">💡 TIP: grid-row: span 2; means "take up 2 rows from wherever you are"</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PRACTICE SECTION
+         ======================================== -->
+    <section class="example-section practice-section">
+        <div class="section-header">
+            <h2>🏆 Practice Challenge</h2>
+            <p class="goal">Try these on your own!</p>
+        </div>
+
+        <div class="challenge-list">
+            <h3>Easy Challenges:</h3>
+            <ol>
+                <li>Change the basic grid from 3 columns to 4 columns</li>
+                <li>Make the photo grid have 5 columns instead of 4</li>
+                <li>Change the gap on any grid to 30px - see the difference!</li>
+                <li>Try changing the sidebar layout to <code>2fr 4fr 1fr</code></li>
+            </ol>
+
+            <h3 style="margin-top: 30px;">Medium Challenges:</h3>
+            <ol>
+                <li>Create a grid with 2 equal columns and 3 rows</li>
+                <li>Make one item in the responsive grid span 2 columns</li>
+                <li>Create a "dashboard" with a header (full width), sidebar (1fr), and main content (3fr)</li>
+                <li>Try <code>auto-fill</code> instead of <code>auto-fit</code> in the responsive grid - what's different?</li>
+            </ol>
+
+            <h3 style="margin-top: 30px;">Advanced Challenges:</h3>
+            <ol>
+                <li>Create a complex "holy grail" layout: header (full width), sidebar + content + ads, footer (full width)</li>
+                <li>Build a Pinterest-style grid where items have different heights</li>
+                <li>Create a calendar grid (7 columns for days of the week)</li>
+                <li>Make a responsive product grid that goes from 4 columns → 2 columns → 1 column (use media queries!)</li>
+            </ol>
+        </div>
+
+        <div class="success-message">
+            <p>💡 <strong>Flexbox vs Grid:</strong> Use Flexbox for one-dimensional layouts (rows OR columns). Use Grid for two-dimensional layouts (rows AND columns)!</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WHEN TO USE GRID VS FLEXBOX
+         ======================================== -->
+    <section class="example-section">
+        <div class="section-header">
+            <h2>🤔 Grid vs Flexbox: When to Use What?</h2>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comparison-box flexbox-box">
+                <h3>Use Flexbox When:</h3>
+                <ul>
+                    <li>✅ Navigation bars (horizontal items)</li>
+                    <li>✅ Centering content</li>
+                    <li>✅ Items in a single row/column</li>
+                    <li>✅ Flexible component layouts</li>
+                    <li>✅ Content determines layout</li>
+                </ul>
+            </div>
+            <div class="comparison-box grid-box">
+                <h3>Use Grid When:</h3>
+                <ul>
+                    <li>✅ Page layouts (header, sidebar, content)</li>
+                    <li>✅ Card/gallery layouts</li>
+                    <li>✅ Items in both rows AND columns</li>
+                    <li>✅ Complex 2D layouts</li>
+                    <li>✅ Layout determines content placement</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="tip" style="margin-top: 20px; font-size: 1.1em;">
+            💡 <strong>Pro Tip:</strong> You can use Grid AND Flexbox together! Use Grid for the overall page layout, then Flexbox inside grid items for component layouts.
+        </p>
+    </section>
+
+</body>
+</html>

@@ -207,9 +207,9 @@ header p {
 
 .card {
     /* TODO #1: Add flex: 1; */
-   
+   flex: 1;
     /* TODO #2: Add min-width: 250px; */
-   
+   min-width: 250px;
     
     background-color: white;
     border: 2px solid #667eea;
@@ -254,9 +254,9 @@ header p {
 
 .feature-box {
     /* TODO: Add flex: 1; */
-
+flex:1;
     /* TODO: Add min-width: 200px; */
-
+min-width: 200px;
     
     background-color: #f9f9f9;
     border: 2px solid #51cf66;
