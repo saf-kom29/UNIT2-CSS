@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 
+    <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-        section {
+        .mainResources {
             padding: 60px 0
         }
 
@@ -41,77 +44,144 @@
             background-color: #cccccc;
             height: 25rem
         }
+
     </style>
 </head>
 
 <body>
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-success p-3">
-        <div class="container-fluid">
+    <section>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <div class="container-xxl">
+                <a href="#home-page" class=" ps-3 navbar-brand">
 
-            <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-dark"></i> Bergen Volunteers </span>
-            </a>
-        </div>
-        <div class="container d-flex justify-content-end">
-            <a href="" class="link-info mx-2 flex-grow-4">About Us</a>
-            <a href="" class="link-info mx-2">About Us</a>
-            <a href="" class="link-info mx-2">About Us</a>
-            <a href="" class="link-info mx-2">About Us</a>
-        </div>
-    </nav>
+                    <div id="logo" class="p-2">BergenHelp</div>
+
+                </a>
+                <!-- toggle button for mobile nav -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar links -->
+
+                <div class="collapse navbar-collapse justify-content-end align-center " id="main-nav">
+                    <ul class="h5 navbar-nav">
+                        <li class="nav-item ">
+                            <a href="index.html" class="nav-link mx-2">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="TSAresources.html" class="nav-link mx-2">Resources</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link mx-2">Map</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link mx-2">Contact Us</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="apply.html" class="nav-link mx-2">Apply</a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </nav>
+    </section>
 
     <!-- HTML -->
     <section id="intro_to_page">
         <div class="container text-center" id="intro">
-            <h1 class="text-light">BergenHelp</h1>
-            <p class="opacity-75">For parents, for kids!</p>
+            <h1 class="text-light p-4">BergenHelp</h1>
+            <p class="text-light">For parents, for kids!</p>
         </div>
     </section>
 
-<section class="mainResources bg-light">
+    <section class="mainResources bg-light">
 
-    <h2 class="text-center">We have a variety of opportunities present:</h2>
+        <h2 class="text-center">We have a variety of opportunities present:</h2>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide justify-content-center" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    <div class="d-flex flex-column align-items-center justify-content-center">
-    <h3>SOMETHING</h3>
-      <img src="..." class="img-fluid w-50" alt="...">
-    </div>
-    </div>
-    <div class="carousel-item">
-    <div class="d-flex flex-column align-items-center justify-content-center">
-    <h3>SOMETHING</h3>
-      <img src="..." class="img-fluid w-50" alt="...">
-    </div>
-    </div>
-    <div class="carousel-item">
-    <div class="d-flex flex-column align-items-center justify-content-center">
-    <h3>SOMETHING</h3>
-      <img src="..." class="img-fluid w-50" alt="...">
-    </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
+        <div id="carouselExampleAutoplaying" class="carousel slide justify-content-center" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h3>SOMETHING</h3>
+                        <img src="..." class="img-fluid w-50" alt="...">
+                        <p class="text-muted my-3"> some info about this</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h3>SOMETHING</h3>
+                        <img src="..." class="img-fluid w-50" alt="...">
+                        <p class="text-muted my-3"> some info about this</p>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h3>SOMETHING</h3>
+                        <img src="..." class="img-fluid w-50" alt="...">
+                        <p class="text-muted my-3"> some info about this</p>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h3>SOMETHING</h3>
+                        <img src="..." class="img-fluid w-50" alt="...">
+                        <p class="text-muted my-3"> some info about this</p>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h3>SOMETHING</h3>
+                        <img src="..." class="img-fluid w-50" alt="...">
+                        <p class="text-muted my-3"> some info about this</p>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <h3>SOMETHING</h3>
+                        <img src="..." class="img-fluid w-50" alt="...">
+                        <p class="text-muted my-3"> some info about this</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
     <section id="resourcelist">
-        <h2 class="mx-4">Resources</h2>
+        <h2 class="m-4">Resources</h2>
 
         <input type="text" id="cardSearch" class="form-control mx-4 my-3" placeholder="Search resources...">
 
-        <div class="container text-center scroll-box">           
+        <div class="container text-center scroll-box">
 
             <!-- CARDS -->
             <div class="row">
