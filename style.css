@@ -117,3 +117,20 @@ header {
             background-color: #cccccc;
             height: 25rem
         }
+
+
+        @media (max-width: 760px) {
+            .start_info {
+                flex-direction: column
+            }
+            .container p{
+                font-size: 24px
+            }
+            #resourcelist {
+                margin: 10px;
+                font-size: small
+            }
+            .card-text {
+                font-size: 15px;
+            }
+        }
