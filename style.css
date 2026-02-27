@@ -118,6 +118,10 @@ header {
             height: 25rem
         }
 
+        .info-image {
+            scale: 1.1
+        }
+
 
         @media (max-width: 760px) {
             .start_info {
