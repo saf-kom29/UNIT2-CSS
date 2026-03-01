@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -70,8 +71,8 @@
 
     <!-- HTML -->
     <section id="intro_to_page">
-        <div class="container-fluid text-center" id="intro" style="transform: translateY(60px)">
-            <h1 class="text-light p-4">BergenHelp</h1>
+        <div class="container-fluid text-center" id="intro">
+            <h1 class="text-light">BergenHelp</h1>
             <p class="text-light">For parents, for kids!</p>
         </div>
     </section>
@@ -80,52 +81,53 @@
 
         <h2 class="text-center" style="transform: translateY(15px)">We have many opportunities:</h2>
 
-        <div id="carouselExampleAutoplaying" class="carousel slide justify-content-center m-3" data-bs-ride="carousel" style="transform: translateY(35px)">
-            <div class="carousel-inner>
-                <div class="carousel-item active>
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h3> <strong>Extracurriculars</strong></h3>
+        <div id="carouselExampleAutoplaying" class="carousel slide justify-content-center m-3" data-bs-ride="carousel"
+            style="transform: translateY(35px)">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center justify-content-center p-2">
+                        <h3 class="carousel-h"> <strong>Extracurriculars</strong></h3>
                         <img src="Images/Untitled design.png" class="img-fluid w-50 info-image" alt="...">
-                        <p class="text-muted my-3"> some info about this</p>
+                        <p class="text-muted my-3"><i class="bi bi-brush-fill"></i></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h3><strong>Education</strong></h3>
+                        <h3 class="carousel-h"><strong>Education</strong></h3>
                         <img src="Images/Education.png" class="img-fluid w-50 info-image" alt="...">
-                        <p class="text-muted my-3"> some info about this</p>
+                        <p class="text-muted mb-3"><i class="bi bi-backpack-fill"></i></p>
 
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h3><strong>After-School Care</strong></h3>
-                        <img src="..." class="img-fluid w-50 info-image" alt="...">
-                        <p class="text-muted my-3"> some info about this</p>
+                        <h3 class="carousel-h"><strong>After-School Care</strong></h3>
+                        <img src="Images/schoolcare.png" class="img-fluid w-50 info-image" alt="...">
+                        <p class="text-muted mb-3"><i class="bi bi-spellcheck"></i></p>
 
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h3><strong>Pediatrics</strong></h3>
-                        <img src="..." class="img-fluid w-50 info-image" alt="...">
-                        <p class="text-muted my-3"> some info about this</p>
+                        <h3 class="carousel-h"><strong>Pediatrics</strong></h3>
+                        <img src="Images/pediatrics.png" class="img-fluid w-50 info-image" alt="...">
+                        <p class="text-muted mb-3"><i class="bi bi-clipboard-heart-fill"></i></p>
 
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h3><strong>Transporation</strong></h3>
-                        <img src="..." class="img-fluid w-50 info-image" alt="...">
-                        <p class="text-muted my-3"> some info about this</p>
+                        <h3 class="carousel-h"><strong>Transporation</strong></h3>
+                        <img src="Images/transportation.png" class="img-fluid w-50 info-image" alt="...">
+                        <p class="text-muted mb-3"><i class="bi bi-bus-front-fill"></i></p>
 
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h3><strong>Food Pantries</strong></h3>
-                        <img src="..." class="img-fluid w-50 info-image" alt="...">
-                        <p class="text-muted my-3"> some info about this</p>
+                        <h3 class="carousel-h"><strong>Food Pantries</strong></h3>
+                        <img src="Images/food.png" class="img-fluid w-50 info-image" alt="...">
+                        <p class="text-muted mb-3"><i class="bi bi-fork-knife"></i></p>
                     </div>
                 </div>
             </div>
@@ -145,10 +147,16 @@
     <section id="resourcelist">
         <h2 class="m-4">Resources</h2>
 
-        <input type="text" id="cardSearch" class="form-control mx-4 my-3" placeholder="Search resources...">
+        <div class="input-group searchBar">
+            <span class=" mb-4 input-group-text">
+                <i class="bi bi-search"></i>
+            </span>
+            <input type="text" id="cardSearch" class="form-control mb-4" placeholder="Search resources...">
 
-        <div class="container text-center scroll-box">
+        </div>
 
+
+        <div class="container text-center ">
             <!-- CARDS -->
             <div class="row">
                 <div class="col">
@@ -157,7 +165,8 @@
                             class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -169,7 +178,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -181,7 +191,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -193,7 +204,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -205,7 +217,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -217,7 +230,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -229,7 +243,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -241,7 +256,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -253,7 +269,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -265,7 +282,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -277,7 +295,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>
@@ -289,7 +308,8 @@
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card banana</h5>
-                            <p class="card-text card-description">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-text card-description">Some quick example text to build on the card title and
+                                make up the bulk
                                 of the card’s content.</p>
                             <a href="#" class="btn btn-primary" target="_blank">Go somewhere</a>
                         </div>

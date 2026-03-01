@@ -1,6 +1,6 @@
 .more-info {
     margin: 30px;
-    background-color:rgb(213, 213, 213)
+    background-color: rgb(213, 213, 213)
 }
 
 /* task 1 */
@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: Aleo, sans-serif ;
+    font-family: Aleo, sans-serif;
     line-height: 1.6;
     color: #131313;
     background-color: rgb(255, 255, 255);
@@ -24,6 +24,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 /* task 2 */
 h1 {
     font-size: 40px;
@@ -39,7 +40,7 @@ h2 {
 h3 {
     font-size: 27px;
     font-weight: 300;
-    margin-bottom:10px ;
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -63,8 +64,9 @@ header {
     display: flex;
     padding: 20px 40px;
     margin: 0 auto;
-    background-color:rgb(69, 69, 154)
+    background-color: rgb(69, 69, 154)
 }
+
 .title {
     font-size: 45px;
     font-weight: bold;
@@ -86,55 +88,82 @@ header {
 }
 
 
+#intro_to_page {
+    background-image: url('Images/bergen-help.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#intro {
+    color: white;
+}
+
+#intro h1 {
+    font-size: 3.5rem;
+}
+
+#intro p {
+    font-size: 1.5rem;
+}
 
 .mainResources {
-            padding: 60px 0
-        }
+    padding: 60px 0;
+    background-image: url('Images/resources-background.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-        .scroll-box {
-            width: fit-content;
-            height: 21rem;
-            border: 1px solid #ccc;
-            overflow-y: auto;
-            /* Vertical scrollbar when needed */
-            overflow-x: hidden;
-            /* Hide horizontal scrollbar */
-            padding: 30px;
-        }
+/* CAROUSEL */
 
-        #intro_to_page {
-            /* Set the background image */
-            background-image: url('https://th.bing.com/th/id/R.edc2fd6f40af132242924913bc3a9438?rik=AQinanDMmiGmug&riu=http%3a%2f%2fwww.buildingfamilies.net%2fwp-content%2fuploads%2f2014%2f09%2fbigstock-Portrait-of-happy-family-with-48536213.jpg&ehk=a%2fUsfG87TzEc0492LPYy7kLCux7BfULfN0iV0jxBrg8%3d&risl=&pid=ImgRaw&r=0');
+.info-image {
+    border-radius: 20px
+}
 
-            /* Make it cover the whole page */
-            background-size: cover;
+.carousel-h {
+    font-size: 35px
+}
 
-            background-position: center;
+.searchBar {
+    max-width: fit-content
+}
 
-            background-repeat: no-repeat;
+.card {
+    animation: hover ease-in-out
+}
 
-            /* Set a fallback background color */
-            background-color: #cccccc;
-            height: 25rem
-        }
+.card:hover {
+    transform: translateY(-5px)
+}
 
-        .info-image {
-            scale: 1.1
-        }
+@media (max-width: 760px) {
+    #intro h1 {
+        font-size: 2.5rem;
+    }
 
+    #intro p {
+        font-size: 1.1rem;
+    }
 
-        @media (max-width: 760px) {
-            .start_info {
-                flex-direction: column
-            }
-            .container p{
-                font-size: 24px
-            }
-            #resourcelist {
-                margin: 10px;
-                font-size: small
-            }
-            .card-text {
-                font-size: 15px;
-            }
-        }
+    #resourcelist {
+        margin: 10px;
+        font-size: small
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 900px) {
+    .info-image {
+       transform: scale(0.8)
+    }
+}
