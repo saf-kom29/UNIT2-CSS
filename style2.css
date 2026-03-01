@@ -73,7 +73,7 @@ header {
     gap: 20px;
 }
 
-
+/* LOGO */
 #logo {
     font-size: 30px;
     font-weight: bold;
@@ -81,78 +81,9 @@ header {
     transition: transform 0.3s ease;
 }
 
-
 #logo:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
-
-
-#intro_to_page {
-    background-image: url('Images/bergen-help.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 200px 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#intro {
-    color: white;
-}
-
-#intro h1 {
-    font-size: 3.5rem;
-}
-
-#intro p {
-    font-size: 1.5rem;
-}
-
-.mainResources {
-    padding: 60px 0;
-    background-color:aliceblue;
-}
-
-/* CAROUSEL */
-
-.info-image {
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
-}
-
-.info-image:hover {
-    transform: translateY(-5px);
-    transform: scale(0.95);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-
-}
-
-.carousel-h {
-    font-size: 35px
-}
-
-/* RESOURCE LIST */
-.searchBar {
-    max-width: fit-content
-}
-
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 20px rgba(0,0,0,0.5)
-}
-
-.cards-list {
-    display: flex;
 }
 
 /* FOOTER */
@@ -181,31 +112,10 @@ header {
     text-decoration:underline
 }
 
-@media (max-width: 760px) {
-    #intro h1 {
-        font-size: 2.5rem;
-    }
-
-    #intro p {
-        font-size: 1.1rem;
-    }
-
-    #resourcelist {
-        margin: 10px;
-        font-size: small
-    }
-
-    .card-text {
-        font-size: 15px;
-    }
-    
-    .cards-list {
-        justify-content: center;        
-    }
-
-    .card {
-        max-width: 12rem
-    }
+@media (max-width: 750px) {
+   .start_info {
+    flex-direction: column
+}
 
 }
 
