@@ -5,37 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Resource</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style2.css">
+    rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+    
     <script defer>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
+        </script>
 
-    <!-- GOOGLE FONT -->
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+<!-- GOOGLE FONT -->
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="resources-link.css">
 </head>
 
 <body>
     <!-- navbar -->
 
-    <section>
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+   <section>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary ">
             <div class="container-xxl">
                 <a href="#home-page" class=" ps-3 navbar-brand">
 
-                    <div id="logo" class="p-2">BergenHelp</div>
+                    <div id="name" class="  ">
+                         <img src="images/BergenHelpLogo.png" class="rounded-circle  mt-0" alt="Bergen Help Logo" style="width: 70px; height: 70px;"> BergenHelp</div>
+
                 </a>
                 <!-- toggle button for mobile nav -->
 
@@ -49,29 +51,30 @@
                 <div class="collapse navbar-collapse justify-content-end align-center " id="main-nav">
                     <ul class="h5 navbar-nav">
                         <li class="nav-item ">
-                            <a href="index.html" class="nav-link mx-2">Home</a>
+                            <a href="index.html" class="   nav-link mx-2">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="TSAresources.html" class="nav-link mx-2">Resources</a>
-                        </li>
-
-
-                        <li class="nav-item">
-                            <a href="#map" class="nav-link mx-2">Map</a>
+                            <a href="resources.html" class=" nav-link mx-2">Resources</a>
                         </li>
 
 
                         <li class="nav-item">
-                            <a href="contacts.html" class="nav-link mx-2">Contact Us</a>
+                            <a href="map.html" class=" nav-link mx-2">Map</a>
                         </li>
 
 
                         <li class="nav-item">
-                            <a href="apply.html" class="nav-link mx-2">Apply</a>
+                            <a href="contacts.html" class=" nav-link mx-2">Contact Us</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="apply.html" class="  nav-link mx-2">Apply</a>
                         </li>
 
                     </ul>
+
 
                 </div>
 
@@ -155,17 +158,24 @@
 
     <!-- FOOTER -->
     <section>
-        <footer id="contact" class="main-footer">
-            <div class="container">
-                <div class="footer-content">
+         <br>
 
-                <!-- Copyright Section -->
-                <div class="footer-bottom">
-                    <p>&copy; 2026 BergenHelp. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
-                            Service</a></p>
-                </div>
-            </div>
-        </footer>
+    <footer class=" mb-0 mt-0 bg-light d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <p class="col-md-4 mb-0 text-body-secondary"> © 2026 Bergen Help, Inc</p>
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none"
+            aria-label="footer">
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                                <use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Resource</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Map</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            <li class="nav-item"><a href="apply.html" class="nav-link px-2 text-body-secondary">Apply</a></li>
+        </ul>
+    </footer>
     </section>
 </body>
 
