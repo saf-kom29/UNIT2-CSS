@@ -1,3 +1,24 @@
-#calming {
-    background-color: linear-gradient(25 deg, red, green, blue)
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+
+#logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* BEGINNING OF RELAXATION CONTAINER*/
+#relaxation-beginning {
+    background: linear-gradient(135deg, rgb(107, 107, 241), rgb(252, 145, 145));
+    border-radius: 25px
+}
+
+.img-logo {
+    max-width: 70px;
+    max-height: 80px;
+    border-radius: 100%
 }

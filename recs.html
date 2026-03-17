@@ -1,106 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recommendations</title>
+    <title>Relaxation</title>
     <link rel="stylesheet" href="recs.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 <body>
+ <!-- navbar -->
 
-    <!-- Navigation -->
-    
-        <nav class="main-nav py-4 my-5">
-            <a href="input.html">Calculate Your Score</a>
-            <a href="recs.html">Recommendations</a>
-            <a href="info.html">Extra Info</a>
-        </nav>
+    <section>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-xxl">
+                <a href="#home-page" class=" ps-3 navbar-brand">
 
-     <!-- Recommendations -->
-     <section id="recs">
-        <div class="container m-4 p-3" id="calming">
-        <h1 class="m-3">Calming Down</h1>
-        <p class="text-muted">Ways to relax before sleeping</p>
-        </div>
+                    <div id="logo" class="p-2">SleepSheep</div>
+                </a>
+                <!-- toggle button for mobile nav -->
 
-        <div class="container text-center d-flex">
-            <div class="row">
-                <div class="col-6">
-                    <div class="card my-4" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Reading</h5>
-                            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed!</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                 <div class="col-6">
-                    <div class="card my-4" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Gentle Stretching</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- navbar links -->
 
-                 <div class="col-6">
-                    <div class="card my-4" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Listen to Music</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+                <div class="collapse navbar-collapse justify-content-end align-center " id="main-nav">
+                    <ul class="h5 navbar-nav">
+                        <li class="nav-item ">
+                            <a href="index.html" class="nav-link mx-2">Home</a>
+                        </li>
 
-                 <div class="col-6">
-                    <div class="card my-4" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Herbal Tea</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+                        <li class="nav-item">
+                            <a href="TSAresources.html" class="nav-link mx-2">Daily Input</a>
+                        </li>
 
-                 <div class="col-6">
-                    <div class="card my-4" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Shower/Bath</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
 
-                 <div class="col-6">
-                    <div class="card my-4" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Journaling</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link mx-2">Your Score</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link mx-2">Weekly Report</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="apply.html" class="nav-link mx-2">Relaxation</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="apply.html" class="nav-link mx-2">Learn</a>
+                        </li>
+
+                    </ul>
+
+
                 </div>
 
             </div>
-        </div>
-     </section>
+        </nav>
 
+
+        <section>
+            <div class="container m-5 p-4 col-xl-11 col-md-9" id="relaxation-beginning">
+                <h1 class="fw-bold text-light">Relaxation Tools</h1>
+                <p class="text-light">Try using these techniques to calm your mind and prepare your body for sleep!</p>
+            </div>
+        </section>
 </body>
 </html>
