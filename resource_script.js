@@ -23,6 +23,9 @@ const btnSubmit = document.querySelector("#btnSubmit")
 const education = document.querySelector(".edu")
 const extracurricular = document.querySelector(".extraCurr")
 const pediatric = document.querySelector(".pediatric")
+const transport = document.querySelector(".transport")
+const afterschoolcare = document.querySelector(".afterschoolcare")
+const foodbank = document.querySelector(".food")
 
 
 btnSubmit.addEventListener("click", (e) => {
@@ -51,6 +54,27 @@ btnSubmit.addEventListener("click", (e) => {
         else if (pediatric.checked) {
             if (!card.classList.contains("pediatrics")) {
                 card.parentElement.style.display = "none";
+            }
+        }
+
+        //TRANSPORTATION
+        else if (transport.checked) {
+            if (!card.classList.contains("transportation")) {
+                card.parentElement.style.display = "none"
+            }
+        }
+
+        //AFTERSCHOOL CARE
+        else if (afterschoolcare.checked) {
+            if (!card.classList.contains("afterschool")) {
+                card.parentElement.style.display = "none"
+            }
+        }
+
+        //FOODBANKS
+        else if (foodbank.checked) {
+            if (!card.classList.contains("foodbank")) {
+                card.parentElement.style.display = "none"
             }
         }
 
