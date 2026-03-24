@@ -101,6 +101,22 @@ header {
     text-align: center;
 }
 
+/* ANIMATION */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
 #intro {
     color: white;
 }
@@ -115,7 +131,7 @@ header {
 
 .mainResources {
     padding: 60px 0;
-    background-color:aliceblue;
+    background-color:rgb(205, 232, 255);
 }
 
 /* CAROUSEL */
@@ -217,5 +233,8 @@ header {
 @media (min-width: 900px) {
     .info-image {
        transform: scale(0.8)
+    }
+    #intro_to_page {
+        background-attachment: scroll;
     }
 }
