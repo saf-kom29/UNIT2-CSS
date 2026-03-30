@@ -80,3 +80,15 @@ btnSubmit.addEventListener("click", (e) => {
 
     });
 });
+
+
+//EXTRA ADD EVENT LISTENER TO GET RID OF THE CHECKS ON SECOND CLICK
+document.querySelectorAll('input[type="radio"]').forEach(radio => {
+  radio.addEventListener('click', function() {
+    if (this.wasChecked) {
+      this.checked = false;
+    }
+    // save state for next click
+    this.wasChecked = this.checked;
+  });
+});
