@@ -157,7 +157,8 @@ header {
 /* RESOURCE LIST */
 #resourcelist h1 {
     padding-top: 40px;
-    transition: 0.4s ease
+    transition: 0.4s ease;
+    text-align: center;
 }
 
 #resourcelist h1:hover {
@@ -241,7 +242,7 @@ header {
     }
 
     #resourcelist h1 {
-        text-align: center;
+        text-align: start;
     }
 
 }
